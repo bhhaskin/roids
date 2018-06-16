@@ -33,5 +33,3 @@
 
 bin/*
 !bin/.gitkeep
-res/*
-!res/.gitkeep

@@ -1,3 +1,29 @@
-[2018-06-14 13:01:27]	LOG   : Log file 'roids.log' cleared
-[2018-06-14 13:01:27]	LOG   : Debug level set to 3
-[2018-06-14 13:01:27]	INFO  : Starting Roids - Version: Development Build
+[2018-06-15 23:49:59]	LOG   : Log file 'roids.log' cleared
+[2018-06-15 23:49:59]	LOG   : Debug level set to 3
+[2018-06-15 23:49:59]	INFO  : Starting Roids - Version: Development Build
+[2018-06-15 23:49:59]	DEBUG : Target FPS: 60.00
+[2018-06-15 23:49:59]	DEBUG : Screen Width: 800
+[2018-06-15 23:49:59]	DEBUG : Screen Height: 600
+[2018-06-15 23:49:59]	DEBUG : Font Name: res/fonts/PressStart2P-Regular.ttf
+[2018-06-15 23:49:59]	DEBUG : Display FPS set to 'true'
+[2018-06-15 23:49:59]	DEBUG : Allegro successfully initiallized
+[2018-06-15 23:49:59]	DEBUG : Display created successfully
+[2018-06-15 23:49:59]	DEBUG : Keyboard initialized successfully
+[2018-06-15 23:49:59]	DEBUG : Mouse initialized successfully
+[2018-06-15 23:49:59]	DEBUG : Main event Queue created susscessfully
+[2018-06-15 23:49:59]	DEBUG : Input event Queue created susscessfully
+[2018-06-15 23:49:59]	DEBUG : Display event registered
+[2018-06-15 23:49:59]	DEBUG : Keyboard event registered
+[2018-06-15 23:49:59]	DEBUG : Mouse event registered
+[2018-06-15 23:49:59]	DEBUG : Image addon initialized
+[2018-06-15 23:49:59]	DEBUG : Primitives addon initialized
+[2018-06-15 23:49:59]	DEBUG : Font addon initialized
+[2018-06-15 23:49:59]	DEBUG : TTF addon initialized
+[2018-06-15 23:49:59]	INFO  : Roids started successfully!
+[2018-06-15 23:49:59]	DEBUG : Timer started
+[2018-06-15 23:50:10]	DEBUG : Display destroyed
+[2018-06-15 23:50:10]	DEBUG : Main event queue destroyed
+[2018-06-15 23:50:10]	DEBUG : Input event queue destroyed
+[2018-06-15 23:50:10]	DEBUG : Timer destroyed
+[2018-06-15 23:50:10]	DEBUG : Font destroyed
+[2018-06-15 23:50:10]	DEBUG : All game objects destroyed
