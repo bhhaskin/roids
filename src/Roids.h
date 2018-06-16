@@ -1,4 +1,5 @@
 #pragma once
+#include "states/BaseState.h"
 #include <string>
 #include <stack>
 #include <allegro5/allegro.h>
@@ -22,5 +23,6 @@ private:
   int screenHeight;
   const char* fontName;
   bool showFPS;
+  std::stack<BaseState*>* states;
 
 };

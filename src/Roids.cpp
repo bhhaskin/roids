@@ -1,5 +1,6 @@
 #include "Roids.h"
 #include "util/SimpleLogger/simplog.h"
+#include "states/MenuState.h"
 #include <stdio.h>
 #include <string>
 #include <allegro5/allegro.h>
@@ -152,7 +153,11 @@ Roids::Roids() {
      // simplog.writeLog( SIMPLOG_VERBOSE, "Timer event registered" );
 
      // Clear the screen to black
- al_clear_to_color( al_map_rgb( 0, 0, 0 ) );
+     al_clear_to_color( al_map_rgb( 0, 0, 0 ) );
+
+     // Push menu state onto the stack
+     states = new std::stack<BaseState*>();
+     states->push( new MenuState( display, input_queue, states ) );
 
 
 }
@@ -222,7 +227,21 @@ void Roids::play() {
           if( redraw && al_is_event_queue_empty( main_queue ) ) {
               redraw = false;
 
+              // Update and render the current state
+            bool updateOkay = states->top()->update( delta );
+            bool renderOkay = states->top()->render();
 
+            // Check if update and render completed okay for the current state
+            if( !updateOkay || !renderOkay ) {
+                // Delete the current state and pop if off the stack
+                delete states->top();
+                states->pop();
+
+                // If there are no states left, end the run loop
+                if( states->empty() ) {
+                    done = true;
+                }
+            }
 
 
               // Print the FPS in the upper left corner
